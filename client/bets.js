@@ -36,24 +36,36 @@ Template.createBet.init = function () {
 Template.betList.bets = function () {
     var pram = Session.get('sortBy'),
         allBets;
+
     switch(pram){
         case 'amount':
             allBets = Bets.find({}, {sort: {amount: 1}});
             break;
-        case 'endDate':
+        case 'enddate':
             allBets = Bets.find({}, {sort: {endDate: -1}});
+            break;
+        case 'name':
+            allBets = Bets.find({}, {sort: {name: -1}});
     }
     
     setTimeout(function () {
-    $('.entry').bind('click', function () {
-        var _id = $(this).data('id');
-        
-        Session.set('currentRoomId','startBet');
-        Session.set('createdGroup',_id);
-        window.location.hash = _id;
-        $('#content').html(getCurrentPageView());
-        Template.startBet.bet();
-    });
+        $('.entry').bind('click', function () {
+            var _id = $(this).data('id');
+            
+            Session.set('currentRoomId','startBet');
+            Session.set('createdGroup',_id);
+            window.location.hash = _id;
+            $('#content').html(getCurrentPageView());
+            Template.startBet.bet();
+        });
+
+        $('.watch').bind('click', function(e) {
+            e.stopImmediatePropagation();
+            var _id = $(this).parents('.entry').data('id');
+            $(this).css('backgroound-color', 'red');
+            console.log($(this));
+            Bets.update({_id: _id}, {$push: {watchers: 'sam'}});
+        });
     },0);
        
     
@@ -65,6 +77,7 @@ Template.startBet.bet = function () {
     
     var _id = (window.location.hash.substr(1)).split('#').toString();
     
+    setTimeout(function() {
     $('#betbutton').on('click', function(e) {
         e.preventDefault();
         console.log($(this));
@@ -77,6 +90,8 @@ Template.startBet.bet = function () {
         }
         
     });
+    },0);
+    
     
 	bet = Bets.findOne({_id: _id});
     
@@ -95,8 +110,6 @@ Handlebars.registerHelper ('getTotalPot', function (amount, betters) {
 });
 
 Handlebars.registerHelper ('convertDate', function (date) {
-    console.log(date);
-    console.log();
     return date.getDate() + '/' +  (date.getMonth()+1) + '/' + date.getFullYear();
 });
 
@@ -133,7 +146,8 @@ Template.createBet.events = {
         window.location.hash = _id;
         $('#content').html(getCurrentPageView());
         Template.startBet.bet();
-    }
+    },
+    'change': function(){console.log('changed');}
 };
 
 

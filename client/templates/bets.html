@@ -4,7 +4,16 @@
 <div class="searchButtonDiv">
 	<input type="text" id="searchButton" placeholder="Search Private Bet"><i class="icon-search iconsearchbutton"></i>
 </div>
+<div style="clear: both"></div>
 
+<div class="filterdivmain">
+ <select class="filterdropdown" onchange="changeSortBy(this)">
+  <option>Filter</option>
+  <option value="amount">Amount</option>
+  <option value="enddate">End Date</option>
+  <option value="name">Name</option>
+ </select>
+</div>
 
     {{#each bets}}
     <div class="entry" data-id="{{ _id }}">
@@ -27,7 +36,7 @@
             <div style="clear: both" />
     
             <div class="watchers">
-                {{ watchers.length }} watching this bet.
+                {{ watchers.length }} watching this bet. <span class="watch">W</span>
             </div>
     
             <div style="clear: both" />
