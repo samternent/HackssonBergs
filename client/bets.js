@@ -49,7 +49,6 @@ Template.betList.bets = function () {
     }
     
     setTimeout(function () {
-<<<<<<< HEAD
     $('.iconsearchbutton').bind('click', function () {
         var id = $('#searchButton').val(),
             bet = Bets.find({}),
@@ -67,8 +66,6 @@ Template.betList.bets = function () {
             Template.startBet.bet();
         }
     });
-=======
->>>>>>> efac37befafbb72dbc586b15463ae151e0d8ed39
 
         $('.entry').bind('click', function () {
             var _id = $(this).data('id');
