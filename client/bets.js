@@ -49,23 +49,7 @@ Template.betList.bets = function () {
     }
     
     setTimeout(function () {
-<<<<<<< HEAD
 
-=======
->>>>>>> 56ae57fe79c5b4cf1cb0c8da5e4c78006cdc5f26
-    $('.entry').bind('click', function () {
-        var _id = $(this).data('id');
-
-        Session.set('currentRoomId','startBet');
-        Session.set('createdGroup',_id);
-        window.location.hash = _id;
-        $('#content').html(getCurrentPageView());
-        Template.startBet.bet();
-    });
-<<<<<<< HEAD
-
-=======
->>>>>>> 56ae57fe79c5b4cf1cb0c8da5e4c78006cdc5f26
         $('.entry').bind('click', function () {
             var _id = $(this).data('id');
             

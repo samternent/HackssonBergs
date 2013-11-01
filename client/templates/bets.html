@@ -9,9 +9,9 @@
 <div class="filterdivmain">
  <select class="filterdropdown" onchange="changeSortBy(this)">
   <option>Filter</option>
-  <option value="amount">Amount</option>
-  <option value="enddate">End Date</option>
-  <option value="name">Name</option>
+  <option value="amount">Pot Size</option>
+  <option value="enddate">Ending Latest</option>
+  <option value="name">Bet Name</option>
  </select>
 </div>
 
@@ -36,7 +36,7 @@
             <div style="clear: both" />
     
             <div class="watchers">
-                {{ watchers.length }} Watchers <span class="watch">W</span>
+                {{ watchers.length }} Watchers <span class="watch watch-button">W</span>
             </div>
     
             <div style="clear: both" />
