@@ -47,7 +47,7 @@ Template.betList.bets = function () {
     setTimeout(function () {
     $('.entry').bind('click', function () {
         var _id = $(this).data('id');
-        
+
         Session.set('currentRoomId','startBet');
         Session.set('createdGroup',_id);
         window.location.hash = _id;

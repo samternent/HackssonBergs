@@ -15,6 +15,7 @@ getView = function (view) {
 };
 
 
+
 $(function(){
     $('#viewBets').on('click', function () {
         if (Session.get('currentRoomId') === 'betList') {
