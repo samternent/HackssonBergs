@@ -1,0 +1,57 @@
+<template name="startBet">
+    {{#with bet}}
+	<div class="startbettitle">
+        {{ name }}
+	</div>
+    
+	<div style="clear: both"></div>
+	
+	<div class="circlediv">
+		<div class="startcircle">
+			&euro;{{getTotalPot amount betters }}
+			
+			<div class="smallcircle3">
+				{{betters.length}}
+			</div>
+			
+			<div class="smallcircle4">
+				&euro; {{ amount }}
+			</div>
+		</div>
+		<div style="clear: both"></div>
+	</div>
+	
+	<div style="clear: both"></div>
+	
+	
+	<div class="fl" style="width:100%; text-align:center">
+		<div class="country">
+			Location: Malta
+		</div>
+		
+		<div style="clear: both"></div>
+		
+		<div class="watchingdiv">
+			{{ watchers.length }} watching this bet.
+		</div>
+		
+		<div style="clear: both"></div>
+		
+		<div class="enddate">
+			<div id="defaultCountdown"></div>
+		</div>
+		
+		<div style="clear: both"></div>
+		
+		<div class="codediv">
+			<input id="codebox" type="text" maxlength="6" readonly value=" {{ betId }} ">
+		</div>
+		
+		<div style="clear: both"></div>
+		
+		<div class="betbuttondox">
+			<input id="betbutton" type="submit" value="Bet Now">
+		</div>
+	</div>
+	{{/with }}
+</template>

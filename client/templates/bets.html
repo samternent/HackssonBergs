@@ -1,0 +1,49 @@
+<template name="betList">
+
+
+<div class="searchButtonDiv">
+	<input type="text" id="searchButton" placeholder="Search Private Bet"><i class="icon-search iconsearchbutton"></i>
+</div>
+
+
+    {{#each bets}}
+    <div class="entry" data-id="{{ _id }}">
+        <div class="fl">
+            <div class="circle">
+                &euro;{{getTotalPot amount betters }}
+                <div class="smallcircle1">
+                    {{betters.length}}
+                </div>
+    
+                <div class="smallcircle2">
+                    &euro;{{ amount }}
+                </div>
+            </div>
+        </div>
+        <div class="fl">
+            <div class="descriptionname">
+                {{ name }}
+            </div>
+            <div style="clear: both" />
+    
+            <div class="watchers">
+                {{ watchers.length }} watching this bet.
+            </div>
+    
+            <div style="clear: both" />
+    
+            <div class="date">
+                End Date: {{convertDate endDate }}
+            </div>
+        </div>
+        <div class="fr arrow">
+            <i class="icon-arrow-right arrow" />
+        </div>
+        <div style="clear: both" />
+    </div>
+    
+    <div style="clear: both" />
+    <div class="sep" />
+    {{/each}}
+
+</template>

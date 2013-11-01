@@ -1,0 +1,272 @@
+#maindiv
+{
+	width: 100%;
+}
+#upperlogo
+{
+	width: 200px;
+	margin: 0 auto;
+}
+.sep
+{
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 1px;
+	margin-top: 10px;
+}
+.allbetsicon i
+{
+	color: #7c9bdc;
+	border: 0px;
+    font-size: 45px;
+    margin-left: 5px;
+}
+body
+{
+	margin: 5px 0px 0px 0px;
+	font-family: helvetica;
+}
+
+.circle 
+{
+	border-radius: 50%;
+	background: #7c9bdc;
+	width: 60px;
+	height: 35px;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+	float: left;
+	position: relative;
+}
+
+.startcircle
+{
+	border-radius: 50%;
+	background: #7c9bdc;
+	width: 130px;
+	height: 70px;
+	font-size: 28px;
+	text-align: center;
+	padding-top: 45px;
+	color: white;
+	float: left;
+	position: relative;
+	margin-top: 25px;
+}
+
+.circlediv
+{
+	width: 140px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.entry
+{
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.descriptionname
+{
+	float: left;
+	margin-left: 35px;
+	font-size: 13px;
+	font-weight: bold;
+	width: 150px;
+	word-wrap: break-word;
+}
+.watchers, .date
+{
+	float: left;
+	margin-left: 35px;
+	font-size: 12px;
+	margin-top: 5px;
+	color: #f39200;
+}
+.fl
+{
+	float: left;
+}
+.fr
+{
+	float: right;
+}
+.smallcircle1
+{
+	border-radius: 50%;
+	background: #c0cbde;
+	width: 25px;
+	height: 20px;
+	z-index: 1;
+	position: absolute;
+	left: 44px;
+	top:-5px;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.smallcircle2
+{
+	border-radius: 50%;
+	background: #c0cbde;
+	width: 25px;
+	height: 20px;
+	z-index: 1;
+	position: absolute;
+	left: 44px;
+	top:33px;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.smallcircle3
+{
+	border-radius: 50%;
+	background: #c0cbde;
+	width: 40px;
+	height: 30px;
+	z-index: 1;
+	position: absolute;
+	left: 90px;
+	top:-8px;
+	font-size: 13px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.smallcircle4
+{
+	border-radius: 50%;
+	background: #c0cbde;
+	width: 40px;
+	height: 30px;
+	z-index: 1;
+	position: absolute;
+	left: 90px;
+	top:85px;
+	font-size: 13px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.smallcircle5
+{
+	border-radius: 50%;
+	background: #c0cbde;
+	width: 40px;
+	height: 30px;
+	font-size: 13px;
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+.alternate
+{
+	background-color: #f3f3f3;
+}
+
+.arrow
+{
+	padding: 20px 5px 0px 0px;
+}
+
+.startbettitle
+{
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	word-wrap: break-word;
+	text-align: center;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.country
+{
+	float: left;
+	font-size: 13px;
+	margin-top: 30px;
+	color: #f39200;
+	text-align:center;
+	width: 100%;
+}
+
+.enddate
+{
+	float: left;
+	font-size: 13px;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	color: #f39200;
+}
+
+.watchingdiv
+{
+	float: left;
+	font-size: 13px;
+	margin-top: 5px;
+	color: #f39200;
+	width: 100%;
+	text-align:center;
+}
+
+.codediv
+{
+	margin-top: 40px;
+}
+
+.betbuttondox
+{
+	margin-top: 10px;
+}
+
+#codebox
+{
+	width: 200px;
+	border: 1px solid #7c9bdc;
+	height: 40px;
+	text-align: center;
+	font-size: 35px;
+	color: #f39200;
+}
+
+#betbutton
+{
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	border: 0px;
+	background-color: #f39200;
+	-webkit-appearance: none;
+}
+
+.searchButtonDiv
+{
+	width: 100%;
+	text-align: center;
+}
+
+#searchButton
+{
+	width: 200px;
+	border: 1px solid #7c9bdc;
+	height: 40px;
+	text-align: center;	
+	font-size: 20px; 
+	color: #f39200;
+}
+
+.iconsearchbutton
+{
+	margin-left: 18px;
+    vertical-align: sub;
+    font-size: 32px;
+}

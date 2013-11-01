@@ -1,0 +1,166 @@
+@font-face {
+	font-family: 'symbols';
+	src:url('/Fonts/symbols.eot');
+	src:url('/Fonts/symbols.eot?#iefix') format('embedded-opentype'),
+		url('/Fonts/symbols.ttf') format('truetype'),
+		url('/Fonts/symbols.woff') format('woff'),
+		url('/Fonts/symbols.svg#symbols') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class*="icon-"] {
+	font-family: 'symbols';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+	content: "\e600";
+}
+.icon-uniE601:before {
+	content: "\e601";
+}
+.icon-dice:before {
+	content: "\e602";
+}
+.icon-search:before {
+	content: "\e603";
+}
+
+
+
+
+
+
+
+
+
+
+
+/* stylish ricky */
+/* Defaults */
+
+.clear{
+	clear: both;
+}
+
+.display-none{
+	display: none;
+}
+
+.display-block{
+	display: block;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+/* End Default */
+
+#wrapper{
+	width: 100%;
+	margin: auto auto;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.notification{
+	padding: 20px;
+    font-size: 1.2em;
+    background: rgba(234,105,3, 0.8);
+    color: #fff;
+    margin: -30px 0 30px;
+}
+
+.bet-name input{
+	background: #ea6903;
+	width: 75%;
+	height: 47px;
+	font-size: 1.8em;
+	text-indent: 10px;
+	text-align: center;
+	border-radius: 20px;
+	color: white;
+	border: 0;
+}
+
+.dial-container{
+	height: 500px;
+	margin-top: 35px;
+	margin-bottom: 50px;
+	opacity: 0.9;
+}
+
+.dial-info{
+	margin-top: 9px;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.share-state-container{
+	width: 200px;
+    margin: auto;
+}
+
+.share-state{
+	width: 90px;
+	float: left;
+}
+
+.public{
+   	margin-right: 20px;              
+}
+
+.private{
+	
+}
+
+
+/* Radio buttons */
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    color: #000;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color: #b3d4fc;
+}
+
+input[type="radio"]:checked + label span{
+     background-color: #ea6903;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+  height: 75px;
+  width: 75px;
+}

@@ -1,0 +1,28 @@
+<template name="createBet">
+    <div id="wrapper">
+        {{ init }}
+        <div class="notification display-none">Select Your Bet Amount</div>
+
+            <div class="bet-name"><input type="text" id="betName" placeholder="I bet you that..." autocomplete="off"></div>
+            <form id="track-wheel-wrapper">
+                {{> betAmount }}
+
+                {{> betEndDate }}
+            </form>
+            <div class="share-state-container">
+                <div class="share-state public">
+                      <input type="radio" id="radio01" name="radio" checked="true" value="true">
+                      <label for="radio01"><span></span>Public</label>
+                </div>
+
+                <div class="share-state private">
+                     <input type="radio" id="radio02" name="radio" value="false">
+                     <label for="radio02" style=""><span></span>Private</label>
+                </div>
+                <div class="clear"></div>
+        </div>
+    </div>  
+</template>
+        
+
+
