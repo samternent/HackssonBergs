@@ -14,6 +14,9 @@
 	height: 1px;
 	margin-top: 10px;
 }
+.allbetsicon {
+  position: absolute;   
+}
 .allbetsicon i
 {
 	color: #7c9bdc;
@@ -85,6 +88,11 @@ body
 	font-size: 12px;
 	margin-top: 5px;
 	color: #f39200;
+    width: 100%;
+}
+.watch {
+    float: right;
+    margin-right: 10px;
 }
 .fl
 {
@@ -165,7 +173,7 @@ body
 	padding-top: 10px;
 	color: white;
 }
-.alternate
+.entry:nth-child(odd)
 {
 	background-color: #f3f3f3;
 }
@@ -269,4 +277,21 @@ body
 	margin-left: 18px;
     vertical-align: sub;
     font-size: 32px;
+}
+
+.filterdivmain
+{
+ width: 100%;
+ text-align: center;
+}
+
+.filterdropdown
+{
+width: 310px;
+border: 1px solid #7c9bdc;
+height: 40px;
+text-align: center;
+font-size: 20px;
+color: #f39200;
+margin-top: 10px;
 }

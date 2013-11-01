@@ -1,6 +1,9 @@
 Session.set('currentRoomId','createBet');
 Session.set('sortBy','amount');
 
+changeSortBy = function(sortby) {
+    Session.set('sortBy',sortby.options[sortby.selectedIndex].value);
+}
 
 getCurrentPageView = function () {
     var room = Session.get('currentRoomId');

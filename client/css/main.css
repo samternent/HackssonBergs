@@ -1,4 +1,16 @@
 #login-buttons {
     position: absolute;
-    right : 200px;
+    right : 0px;
+    top: 18px;
+    padding : 5px 5px 5px 15px;
+    background-color : #f39200;
+    display: block;
+    font-size: 11px;
+    border-radius : 15px 0 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+#login-dropdown-list {   
+    float:left;
+    position: relative;
 }
