@@ -49,7 +49,7 @@ Template.betList.bets = function () {
     }
     
     setTimeout(function () {
-<<<<<<< HEAD
+
     $('.entry').bind('click', function () {
         var _id = $(this).data('id');
 
@@ -59,7 +59,7 @@ Template.betList.bets = function () {
         $('#content').html(getCurrentPageView());
         Template.startBet.bet();
     });
-=======
+
         $('.entry').bind('click', function () {
             var _id = $(this).data('id');
             
@@ -77,7 +77,7 @@ Template.betList.bets = function () {
             console.log($(this));
             Bets.update({_id: _id}, {$push: {watchers: 'sam'}});
         });
->>>>>>> master
+
     },0);
        
     
