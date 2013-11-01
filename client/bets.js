@@ -49,23 +49,24 @@ Template.betList.bets = function () {
     }
     
     setTimeout(function () {
-<<<<<<< HEAD
-
-=======
->>>>>>> 56ae57fe79c5b4cf1cb0c8da5e4c78006cdc5f26
-    $('.entry').bind('click', function () {
-        var _id = $(this).data('id');
-
-        Session.set('currentRoomId','startBet');
-        Session.set('createdGroup',_id);
-        window.location.hash = _id;
-        $('#content').html(getCurrentPageView());
-        Template.startBet.bet();
+    $('.iconsearchbutton').bind('click', function () {
+        var id = $('#searchButton').val(),
+            bet = Bets.find({}),
+            _id;
+        for (var obj in bet.collection.docs) {
+            if (bet.collection.docs[obj].betId) {
+                _id = (parseInt(id) === parseInt(bet.collection.docs[obj].betId)) ? _id = obj : null;
+            }
+        }
+        if(_id != null) {
+            Session.set('currentRoomId','startBet');
+            Session.set('createdGroup',_id);
+            window.location.hash = _id;
+            $('#content').html(getCurrentPageView());
+            Template.startBet.bet();
+        }
     });
-<<<<<<< HEAD
 
-=======
->>>>>>> 56ae57fe79c5b4cf1cb0c8da5e4c78006cdc5f26
         $('.entry').bind('click', function () {
             var _id = $(this).data('id');
             
