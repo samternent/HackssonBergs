@@ -14,3 +14,7 @@
     float:left;
     position: relative;
 }
+
+#login-buttons a, .accounts-dialog a{
+    text-decoration: none;
+}

@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'symbols';
-	src:url('/Fonts/symbols.eot');
-	src:url('/Fonts/symbols.eot?#iefix') format('embedded-opentype'),
-		url('/Fonts/symbols.ttf') format('truetype'),
-		url('/Fonts/symbols.woff') format('woff'),
-		url('/Fonts/symbols.svg#symbols') format('svg');
+	font-family: 'Symbols';
+	src:url('/fonts/Symbols.eot');
+	src:url('/fonts/Symbols.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Symbols.ttf') format('truetype'),
+		url('/fonts/Symbols.woff') format('woff'),
+		url('/fonts/Symbols.svg#Symbols') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class*="icon-"] {
-	font-family: 'symbols';
+	font-family: 'Symbols';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -23,21 +23,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-right:before {
+.icon-list:before {
 	content: "\e600";
 }
-.icon-uniE601:before {
+.icon-arrow-right-small:before {
 	content: "\e601";
 }
-.icon-dice:before {
+.icon-arrow-right:before {
 	content: "\e602";
 }
 .icon-search:before {
-	content: "\e603";
+	content: "\e604";
 }
-
-
-
 
 
 
@@ -85,7 +82,7 @@
 .bet-name input{
 	background: #ea6903;
 	width: 75%;
-	height: 35px;
+	height: 45px;
 	font-size: 1.2em;
 	text-indent: 10px;
 	text-align: center;
@@ -167,5 +164,9 @@ input[type="radio"]:checked + label span {
 
 @media (max-width: 480px) {
 	.dial-container{ height: 300px;}
+
+	.bet-name input{
+		height: 35px;
+	}
 }
 
